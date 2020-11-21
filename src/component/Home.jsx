@@ -11,16 +11,23 @@ export default function Home() {
   const [fs, setFs] = useState("");
   const [is, setIs] = useState("");
   const [cs, setCs] = useState("");
-  const [startDate, setStartDate] = useState(`1970-01-01`);
+  const [startDate, setStartDate] = useState(
+    new Date(1359999200).getFullYear() +
+      "-" +
+      new Date(1359999200).getMonth() +
+      1 +
+      "-" +
+      new Date(1359999200).getDate()
+  );
   const [endDate, setEndDate] = useState(
     new Date().getFullYear() +
       "-" +
-      new Date().getMonth() +
+      (new Date().getMonth() + 1) +
       "-" +
       new Date().getDate()
   );
   //fetchFilterData
-  const filterDataFunction = useCallback(() => {
+  const filterDataFunction = () => {
     const copydata = [...fetchData];
     console.log(copydata);
     const myNewData = copydata.filter((el) => {
@@ -45,7 +52,7 @@ export default function Home() {
     });
     console.log(myNewData);
     return myNewData;
-  }, [ts, fs, is, cs, endDate, startDate]);
+  };
 
   //APi Call
   const apiurl = `https://gist.githubusercontent.com/pandemonia/21703a6a303e0487a73b2610c8db41ab/raw/9667fc19a0f89193e894da7aaadf6a4b7758b45e/twubric.json`;
@@ -75,7 +82,8 @@ export default function Home() {
 
   //handleFilter
   const handleFilterClick = () => {
-    if (!ts && !fs && !is && !cs && !endDate && !startDate) return;
+    // if (!ts && !fs && !is && !cs && !endDate && !startDate) return;
+    console.log("Amit");
     setMatch(filterDataFunction());
   };
 
@@ -85,11 +93,18 @@ export default function Home() {
     setFs("");
     setIs("");
     setCs("");
-    setStartDate(`1970-01-01`);
+    setStartDate(
+      new Date(1359999200).getFullYear() +
+        "-" +
+        new Date(1359999200).getMonth() +
+        1 +
+        "-" +
+        new Date(1359999200).getDate()
+    );
     setEndDate(
       new Date().getFullYear() +
         "-" +
-        new Date().getMonth() +
+        (new Date().getMonth() + 1) +
         "-" +
         new Date().getDate()
     );
