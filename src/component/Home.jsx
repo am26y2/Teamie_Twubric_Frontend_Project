@@ -2,7 +2,7 @@ import "./../styles.css";
 import React, { useCallback, useEffect, useState } from "react";
 import SimpleCard from "./SimpleCard";
 import DatePickers from "./DatePickers";
-import { Box } from "@material-ui/core";
+import { Box, TextField } from "@material-ui/core";
 export default function Home() {
   const modifydata = [];
   const [match, setMatch] = useState([]);
@@ -122,50 +122,49 @@ export default function Home() {
     <>
       <div className="sortby col">
         <h3>SortBy</h3>
-        <div className="row">
+        <div className="inputfilled">
           <div className="col ">
-            <label for="Twubric_Score">Twubric Score</label>
-            <input
+            <TextField
+              id="standard-number"
+              label="Twubric_Score"
               type="number"
-              id="Twubric_Score"
-              name="Twubric_Score"
-              min="0"
-              step="0.1"
-              value={ts}
               onChange={(el) => setTs(el.target.value)}
+              InputLabelProps={{
+                shrink: true
+              }}
             />
           </div>
           <div className="col">
-            <label for="Friends">Friends</label>
-            <input
+            <TextField
+              id="standard-number"
+              label="Friends"
               type="number"
-              id="Friends"
-              name="Friends"
-              min="0"
-              value={fs}
               onChange={(el) => setFs(el.target.value)}
+              InputLabelProps={{
+                shrink: true
+              }}
             />
           </div>
           <div className="col">
-            <label for="Influence">Influence</label>
-            <input
+            <TextField
+              id="standard-number"
+              label="Influence"
               type="number"
-              id="Influence"
-              name="Influence"
-              min="0"
-              value={is}
               onChange={(el) => setIs(el.target.value)}
+              InputLabelProps={{
+                shrink: true
+              }}
             />
           </div>
           <div className="col">
-            <label for="Chirpiness">Chirpiness</label>
-            <input
+            <TextField
+              id="standard-number"
+              label="Chirpiness"
               type="number"
-              id="Chirpiness"
-              name="Chirpiness"
-              min="0"
-              value={cs}
               onChange={(el) => setCs(el.target.value)}
+              InputLabelProps={{
+                shrink: true
+              }}
             />
           </div>
         </div>

@@ -9,6 +9,12 @@
   display: flex;
   justify-content: space-between;
 }
+.inputfilled {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
 .row {
   display: flex;
   justify-content: space-around;
