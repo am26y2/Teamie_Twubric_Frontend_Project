@@ -125,7 +125,7 @@ export default function Home() {
         <div className="inputfilled">
           <div className="col ">
             <TextField
-              id="standard-number"
+              id="Twubric_Score"
               label="Twubric_Score"
               type="number"
               onChange={(el) => setTs(el.target.value)}
@@ -136,7 +136,7 @@ export default function Home() {
           </div>
           <div className="col">
             <TextField
-              id="standard-number"
+              id="Friends"
               label="Friends"
               type="number"
               onChange={(el) => setFs(el.target.value)}
@@ -147,7 +147,7 @@ export default function Home() {
           </div>
           <div className="col">
             <TextField
-              id="standard-number"
+              id="Influence"
               label="Influence"
               type="number"
               onChange={(el) => setIs(el.target.value)}
@@ -158,7 +158,7 @@ export default function Home() {
           </div>
           <div className="col">
             <TextField
-              id="standard-number"
+              id="Chirpinessr"
               label="Chirpiness"
               type="number"
               onChange={(el) => setCs(el.target.value)}
