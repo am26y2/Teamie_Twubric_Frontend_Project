@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.rowcardheader {
+  display: flex;
+  justify-content: space-between;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+.joined {
+  text-align: center;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 18px;
+  margin: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {
+  background-color: white;
+}
+
+button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+}
