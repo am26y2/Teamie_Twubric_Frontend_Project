@@ -58,7 +58,11 @@ export default function SimpleCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" onClick={() => props.onDelete(props.id)}>
+        <Button
+          color="secondary"
+          size="small"
+          onClick={() => props.onDelete(props.id)}
+        >
           Delete
         </Button>
       </CardActions>
