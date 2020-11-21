@@ -1,6 +1,6 @@
 # Teamine_Twubric_project
 
-Created with CodeSandbox CodeSandbox-Link:-https://u2lyo.csb.app/
+Created with CodeSandbox CodeSandbox-Link:-https://t8431.csb.app/
 
 1. My project dispalys the card view of user's Twitter followers.
 2. We have different Sort option to have a look for specific user.
