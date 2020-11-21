@@ -9,9 +9,3 @@ Created with CodeSandbox CodeSandbox-Link:-https://u2lyo.csb.app/
    [Filter]: Dispaly the data based on input provided.
    [RestFilter]: Clears the filter field selection.
    [Default value]: Removes all filter result, display default result.
-
-   [Filter]: Dispaly the data based on input provided.
-   [RestFilter]: Clears the filter field selection.
-
-   > > > > > > > GitHub
-   > > > > > > > [Default value]: Removes all filter result, display default result.
