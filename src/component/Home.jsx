@@ -96,8 +96,7 @@ export default function Home() {
     setStartDate(
       new Date(1359999200).getFullYear() +
         "-" +
-        new Date(1359999200).getMonth() +
-        1 +
+        (new Date(1359999200).getMonth() + 1) +
         "-" +
         new Date(1359999200).getDate()
     );
